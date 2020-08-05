@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+# Query an external DNS server on the slash16.org domain name (ie. : google 8.8.8.8)
+
+dig @8.8.8.8 slash16.org
+
+# alternatively we can use `nslookup slash16.org 8.8.8.8`
+# alternatively we can use `host slash16.org 8.8.8.8`
+
+# if DNS server is not specified for any of these utilities then
+# it's done by default DNS server which can be found in /etc/resolv.conf

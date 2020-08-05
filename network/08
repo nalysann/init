@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+# Find the provider of slash16.org
+
+echo Amazon / AWS
+
+# optionally we can find out the IP addresses of slash16.org with
+# `dig slash16.org` or `nslookup slash16.org` or `host slash16.org`
+# then use `whois slash16.org` or `whois %one_of_the_ip_addresses%`
+# to get the provider information
+
+# alternatively we can use [one of the many] online services

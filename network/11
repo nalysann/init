@@ -1,0 +1,9 @@
+#!/bin/zsh
+
+# Use the output of the previous command to find the name and IP address of the
+# device that makes the link between you (local network) and the outside world
+
+echo subnet router IP - 192.168.20.1
+echo last local router IP - 192.168.2.9
+
+# the answer depends on what we consider the local network and the outside world

@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+# Get the complete path of the file that contains
+# the IP address of the DNS server you’re using
+
+echo /etc/resolv.conf
+
+# /etc/resolv.conf -> /var/run/resolv.conf
+
+# alternatively to get the IP address we can use
+# `scutil --dns | grep nameserver | head -1 | awk '{print $3}'`

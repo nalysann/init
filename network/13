@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+# Thanks to the previous question and the reverse DNS find the name of your host
+
+ifconfig en0 | grep 'inet ' | awk '{print $2}' | xargs nslookup | grep name | awk '{print $4}'
+
+# alternatively we can use `ifconfig en0 | grep 'inet ' | awk '{print $2}' | xargs host | grep name | awk '{print $5}'`
+# alternatively we can use `ifconfig en0 | grep 'inet ' | awk '{print $2}' | xargs dig -x | grep in-addr | sed -n 2p | awk '{print $5}'`
+
+# without using the previous question we can just use `hostname`

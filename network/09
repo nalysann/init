@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+# Find the external IP of 42.fr
+
+dig 42.fr | grep 42.fr | tail -2 | awk '{print $5}'
+
+# alternatively we can use `nslookup 42.fr | grep Address | tail -2 | awk '{print $2}'`
+# alternatively we can use `host 42.fr | head -2 | awk '{print $4}'`

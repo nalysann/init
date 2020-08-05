@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+# What file contains the local DNS entries?
+
+echo /etc/hosts
