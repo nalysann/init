@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+# Identify the default gateway in the routing table
+
+route get default | grep gateway | awk '{print $2}'
+
+# alternatively we can use `netstat -rn | grep default | head -1 | awk '{print $2}'`
+# -r option shows routing tables
+# -n option shows addresses as numbers (default is symbolic interpretation)
+# although -n option is not necessary here, netstat works slowly without it
+# is it trying to resolve addresses and it takes more time ???

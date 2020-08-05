@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+# Identify the IP address of the DNS that responds to the following url: slash16.org
+
+dig slash16.org | grep SERVER | awk '{print $3}' | cut -d \# -f 1
+
+# alternatively we can use `nslookup slash16.org | grep Server | awk '{print $2}'`
+# alternatively we can use `host -v slash16.org | grep Received | head -1 | awk '{print $5}' | cut -d \# -f 1`

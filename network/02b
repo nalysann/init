@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+# Identify and display the Ethernet interface characteristics:
+#   (b) Identify all IP addresses which are part of the same subnet
+
+ifconfig en0 | grep broadcast | awk '{print $6}' | xargs ping -c 4 >> /dev/null
+arp -a | awk '{print $2}' | cut -d \( -f 2 | cut -d \) -f 1
+
+# first `ping` the broadcast address to refresh arp cache
+# -a option displays all current arp entries
+# this will give us all [currently active] devices in the subnet
+# use `awk` and `cut` to get the fancy output
+# last [two] addresses are multicast addresses (which are not part of the subnet ???)
+
+# alternatively we can use `ifconfig en0` to get the IP address and netmask
+# and calculate the range of all possible IP addresses manually

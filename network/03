@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+# Identify the MAC address of the Wi-Fi card
+
+networksetup -getmacaddress wi-fi | awk '{print $3}'
+
+# -getmacaddress displays ethernet (or Wi-Fi) address for hardwareport or device specified
+
+# alternatively we can use `ifconfig en1 | grep ether | awk '{print $2}'`
+# use ifconfig -v to identify wi-fi interface
+# but what about awdl0 and p2p0 ???
