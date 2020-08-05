@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# In what file can you find the installed version of your Debian?
+
+cat /etc/debian_version
+
+# alternatively we can use `cat /etc/os-release` but it doesn't have
+# the exact version and contains a lot of additional information

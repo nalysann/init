@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# What command can you use to rename your system?
+
+hostname pepega
+
+# hostname without arguments displays current system name
+# this command does not make the changes permanent
