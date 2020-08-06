@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Find the command that kills the background command’s process
+
+pkill tail
+
+# alternatively we can use `pgrep tail | xargs kill`
+# alternatively we can use `kill %job_number`

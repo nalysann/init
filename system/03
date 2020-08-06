@@ -4,6 +4,7 @@
 
 echo /etc/hostname
 
-# changes will apply after rebooting the system
+# changes will be seen through `hostname` only after rebooting the system
 
-# hostnamectl ???
+# alternatively we can use `hostnamectl set-hostname new_hostname`
+# changes will be seen through `hostname` immediately

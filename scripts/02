@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Write a script which deletes an ACTIVE user on the VM
+
+export NAME=$(whoami)
+su -p -c 'passwd -l $NAME; pkill -u $NAME; sudo userdel -rf $NAME'
+
+# this may cause irreversible damage to your system

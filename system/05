@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Name the command that determines the state of the SSH service
+
+systemctl status ssh
+
+# alternatively we can use `service ssh status`

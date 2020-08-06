@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# List all existing users on the VM
+
+cat /etc/passwd | cut -d : -f 1
+
+# alternatively we can use `getent passwd | cut -d : -f 1`

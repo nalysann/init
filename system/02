@@ -2,7 +2,9 @@
 
 # What command can you use to rename your system?
 
-hostname pepega
+hostname new_hostname
 
-# hostname without arguments displays current system name
-# this command does not make the changes permanent
+# it affects only the transient hostname
+
+# alternatively we can use `hostnamectl set-hostname new_hostname`
+# it affects both static and transient hostnames

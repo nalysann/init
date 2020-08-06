@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Explain how connect yourself as new user with graphic session and ssh session
+
+echo graphic session - input login and password when asked
+echo ssh session - type \`ssh [-p port] destination\` in shell, input password when asked

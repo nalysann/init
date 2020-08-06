@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Figure out the PID of the SSHD service
+
+cat /var/run/sshd.pid
+
+# alternatively we can use `pgrep sshd`
+# alternatively we can use `pidof sshd`
+# alternatively we can use `systemctl status ssh | grep PID | awk '{print $3}'`
+# alternatively we can use `service ssh status | grep PID | awk '{print $3}'`

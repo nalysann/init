@@ -1,5 +1,5 @@
 #!/bin/zsh
 
-# Find the IP that was assigned to you by dhcp server
+# Find the IP that was assigned to you by DHCP server
 
 ifconfig en0 | grep 'inet ' | awk '{print $2}'

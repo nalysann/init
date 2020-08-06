@@ -4,5 +4,10 @@
 
 cat /etc/debian_version
 
-# alternatively we can use `cat /etc/os-release` but it doesn't have
-# the exact version and contains a lot of additional information
+# alternatively we can use `cat /etc/os-release`
+# alternatively we can use `cat /etc/issue`
+# alternatively we can use `lsb_release -a`
+# alternatively we can use `hostnamectl`
+
+# all these alternative methods don't give us the exact
+# version and / or contain a lot of additional information

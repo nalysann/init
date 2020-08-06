@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# List all real users on the VM
+
+cat /etc/passwd | grep /home | cut -d : -f 1
+
+# alternatively we can use `getent passwd {UID_MIN..UID_MAX}`
+# UID_MIN and UID_MAX are defined in /etc/login.defs
+# we can get these values with `grep -E '^UID_MIN|^UID_MAX' /etc/login.defs`

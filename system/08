@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# What file contains the RSA keys of systems that are authorized to connect via SSH?
+
+cat /etc/ssh/sshd_config | grep AuthorizedKeysFile | cut -d $'\t' -f 2
+
+# usually it's ~/.ssh/authorized_keys

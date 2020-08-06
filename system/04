@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# What command gives you the time since your system was last booted?
+
+uptime -p
+
+# -p is used only for pretty formatting
+# `who -b`, `last reboot`, `w` and `top` might also be useful

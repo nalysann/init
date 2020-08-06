@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Name the command that lists the partition tables of drives
+
+fdisk -l
+
+# alterantively we can use `lsblk`
+# alterantively we can use `cfdisk`
+# alterantively we can use `sfdisk`
+# alterantively we can use `parted -s /dev/sda unit unit_name print`
+# need to install it first, parted can manipulate units

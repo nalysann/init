@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Find the command that allows you to connect via ssh
+# on the VM in parallel with the graphic session
+
+ssh -p 2020 nalysann@localhost
+
+# first we need to forward 2020 port on host to 22 port on VM

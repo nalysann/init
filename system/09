@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# What command lets you know who is connected to the System?
+
+who
+
+# alternatively we can use `w`
+# alternatively we can use `users`

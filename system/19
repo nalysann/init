@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# List all services which are started at boot time and name this kind of services
+
+systemctl list-unit-files --all --type=service --state=enabled
+
+# these services are called daemons
+
+# alternatively we can use `service --status-all` (output differs ???)
